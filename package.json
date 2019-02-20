@@ -11,8 +11,7 @@
   "author": "Wouter Admiraal <wouter.admiraal@sonarsource.com>",
   "license": "LGPL-3.0",
   "scripts": {
-    "build:css": "run-for-every-file --file '*.scss' --run 'node-sass --include-path=node_modules/ --output-style=compressed -o dist/{{file-name}}.min.css {{src-file}}'",
-    "build:css:dev": "node-sass --include-path=node_modules/ --output-style=expanded -o dist *.scss"
+    "build:css": "node-sass --include-path=node_modules/ --output-style=expanded src/grid.scss grid.scss"
   },
   "devDependencies": {
     "node-sass": "^4.11.0"
